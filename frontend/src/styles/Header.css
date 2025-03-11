@@ -1,0 +1,242 @@
+@import 'SearchBar.css';
+header {
+    position: relative;
+    background: rgb(255, 255, 255);
+    padding: 8px 0px;
+    z-index: 999;
+    width: 1406.67px;
+}
+
+.header-container {
+    width: 1280px;
+    /* 1280px */
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header-sub-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo img {
+    width: 96px;
+    height: 40px;
+}
+
+.logo span {
+    font-size: 14px;
+    color: rgb(0, 62, 161);
+    margin-top: 8px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.main-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1 0 0px;
+    align-items: stretch;
+    float: left;
+    width: 80%;
+}
+
+.top-bar {
+    display: flex;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    align-items: center;
+    padding: 0px;
+}
+
+
+.menu-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 48px;
+}
+
+.home,
+.account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5.5px 16px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 8px;
+}
+
+.home img {
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+    border-radius: 50%;
+}
+
+.account img {
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+    border-radius: 50%;
+}
+
+.account:hover, .home:hover {
+    background-color: rgba(39, 39, 42, 0.12);
+}
+
+.home span,
+.account span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: rgb(128, 128, 137);
+}
+
+.cart {
+    position: relative;
+    display: block;
+}
+
+.cart-icon img {
+    margin-right: 0px;
+    border-radius: unset;
+    width: 24px;
+    height: 24px;
+}
+
+.cart-inner {
+    margin-left: 24px;
+    position: relative;
+    padding: 0px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.cart-inner::before {
+    content: "";
+    display: block;
+    height: 20px;
+    position: absolute;
+    left: -12px;
+    border: 1px solid rgb(235, 235, 240);
+}
+
+.cart-icon {
+    position: relative;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.cart-icon span {
+    color: rgb(255, 255, 255);
+    background: rgb(255, 66, 79);
+    height: 16px;
+    right: 0px;
+    top: -4px;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 150%;
+    position: absolute;
+    padding: 0.5px 4px;
+}
+
+.cart-icon:hover {
+    background-color: rgba(10, 104, 255, 0.2);
+    ;
+}
+
+.bottom-bar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.suggest-list {
+    display: flex;
+    height: 24px;
+    width: 712px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    overflow: hidden;
+    gap: 12px;
+}
+
+.suggest-list a {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: rgb(128, 128, 137);
+    white-space: nowrap;
+}
+
+.suggest-list a:hover {
+    text-decoration: none;
+}
+
+.place-wrapper {
+    margin-bottom: 3px;
+    max-width: 348px;
+    flex: 0 0 348px;
+    height: 21px;
+}
+
+.place {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: flex-end;
+    margin-left: 10.5px;
+}
+
+.place img {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+}
+
+.place .title {
+    margin: 0px;
+    color: rgb(128, 128, 137);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    padding-right: 4px;
+    white-space: nowrap;
+}
+
+.place .address {
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgb(39, 39, 42);
+    padding: 0px;
+    margin: 0px;
+}

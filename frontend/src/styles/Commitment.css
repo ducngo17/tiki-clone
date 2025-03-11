@@ -1,0 +1,69 @@
+.commitment {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 0px;
+    gap: 4px;
+    background: white;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: rgb(235, 235, 240);
+    width: 1406.67px;
+}
+
+.container{
+    width: 1280px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    gap: 12px;
+    padding-inline: 24px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cam-ket-text{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 150%;
+    white-space: nowrap;
+    color: rgb(0, 62, 161)
+}
+
+.content {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.content-list {
+    display: flex;
+    gap: 4px;
+    padding-inline: 6px;
+    align-items: center;
+}
+
+.content-list img{
+    width: 20px;
+    height: 20px;
+    /* object-fit: contain;
+    display: block; */
+}
+
+.content-list span {
+    color: #27272A;
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.wall {
+    width: 1px;
+    height: 20px;
+    background: #EBEBF0;
+}
+

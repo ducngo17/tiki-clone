@@ -1,0 +1,250 @@
+.sidebar-wrapper {
+    width: 240px;
+    flex-shrink: 0;
+    display: block;
+}
+
+.tree-categories-container {
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    width: 240px;
+    margin-bottom: 16px;
+}
+
+.tree-title {
+    color: rgb(39, 39, 42);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 150%;
+    padding: 12px 16px;
+    border-bottom: 1px solid rgb(235, 235, 240);
+}
+
+.tree-widget-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.tree-item-container {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(235, 235, 240);
+    cursor: pointer;
+}
+
+.tree-item-style {
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.tree-item-text {
+    color: rgb(39, 39, 42);
+    text-overflow: ellipsis;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 150%;
+    padding: 4px 0px;
+}
+
+.tree-item-text:hover {
+    color: rgb(10, 104, 255);
+    text-decoration: underline;
+}
+
+.tree-icon {
+    transform: rotate(180deg);
+    padding: 6px;
+    border-radius: 4px;
+    display: block;
+}
+
+.tree-icon:hover {
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.tree-icon img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    display: block;
+}
+
+.tree-sub-item-show {
+    overflow: hidden;
+    transition: max-height 0.3s;
+    padding-left: 28px;
+    padding-right: 16px;
+}
+
+.tree-sub-item-hidden {
+    max-height: 0px;
+    visibility: hidden;
+}
+
+.subitem {
+    padding-bottom: 12px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+    color: rgb(39, 39, 42);
+}
+
+.subitem:hover {
+    color: rgb(10, 104, 255);
+    text-decoration: underline;
+}
+
+.advertisement {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ad {
+    background-color: rgb(245, 245, 250);
+}
+
+.ad-container {
+    position: relative;
+    display: block;
+    text-align: center;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.ad-container:hover {
+    text-decoration: none;
+}
+
+.ad-pic img {
+    margin: 0px auto;
+    width: 160px;
+    height: 160px;
+    display: block;
+    object-fit: contain;
+}
+
+.sponsor-badge {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: rgb(235, 235, 240);
+    border-radius: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: rgb(39, 39, 42);
+}
+
+.ad-info {
+    padding: 16px;
+}
+
+.seller-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seller-info img {
+    display: block;
+    width: 31px;
+    height: 31px;
+    object-fit: contain;
+    border: 1px solid rgb(235, 235, 240);
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.seller-name {
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(39, 39, 42);
+    display: -webkit-box;
+    overflow: hidden;   
+}
+
+.product-name {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: rgb(39, 39, 42);
+    margin-top: 19px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.ad-rating {
+    font-size: 10px;
+    line-height: 15px;
+    color: rgb(128, 128, 137);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-top: 4px;
+}
+
+.ad-stars {
+    font-size: 10px;
+    line-height: 15px;
+    color: rgb(128, 128, 137);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.ad-seperator {
+    width: 1px;
+    height: 18px;
+    background-color: rgb(235, 235, 240);
+    flex-shrink: 0;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.ad-price-container {
+    display: flex;
+    margin: 19px auto 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+.ad-price {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+    color: rgb(255, 66, 78);
+
+}
+
+.ad-discount {
+    margin-left: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: rgb(255, 66, 78);
+    transform: translateY(1px);
+}
+
+.ad-viewmore-btn {
+    padding: 5.5px 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 96, 255);
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+}

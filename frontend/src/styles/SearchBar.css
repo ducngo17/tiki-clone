@@ -1,0 +1,70 @@
+@import 'AutoComplete.css';
+.search-bar {
+    display: flex;
+    flex: 1 1 0%;
+    align-items: center;
+}
+
+.search-box {
+    width: 100%;
+    display: flex;
+    position: relative;
+    border: 1px solid rgb(221, 221, 227);
+    border-radius: 8px;
+    align-items: center;
+}
+
+.icon-search {
+    width: 20px;
+    height: 20px;
+    margin: 0px 0px 0px 18px;
+}
+
+.search-box input {
+    border: 0px;
+    padding: 0px 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    flex: 1 1 0%;
+    outline: none;
+    font-family: inherit;
+}
+
+.search-box button {
+    cursor: pointer;
+    border: 0px;
+    width: 92px;
+    height: 38px;
+    padding: 4px;
+    border-radius: 0px 8px 8px 0px;
+    background: transparent;
+    color: rgb(10, 104, 255);
+    font-weight: 400;
+    font-size: 14px;
+    font-family: inherit;
+    line-height: 150%;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.search-box button::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 1px solid rgb(221, 221, 227);
+    height: 24px;
+    left: 0px;
+    top: 8px;
+}
+
+.search-box button:hover {
+    background-color: rgba(10, 104, 255, 0.2);
+    ;
+}
+

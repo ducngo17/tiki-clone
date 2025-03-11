@@ -1,0 +1,41 @@
+.popup {
+    position: absolute;
+    z-index: 999;
+    background-color: white;
+    margin-top: 4px;
+    width: 192px;
+    filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 1px 4px);
+    border-radius: 4px;
+    pointer-events: auto;
+    top: 877.76px;
+    left: 1174.68px;
+}
+
+.popup-content {
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(39, 39, 42);
+    cursor: pointer;
+}
+
+.sort-item-wrapper {
+    padding: 0px 16px;
+    position: relative;
+}
+
+.sort-item {
+    padding: 8px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.sort-item-wrapper img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
